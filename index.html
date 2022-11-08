@@ -48,6 +48,20 @@
   </tbody>
 </table>
     
+    const person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const person1 = {
+  firstName: "Rebecca",
+  lastName: "Watley"
+}
+
+// This will return "Rebecca Watley":
+person.fullName.apply(person1);
+    
   </body>
 </html>
 
