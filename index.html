@@ -50,6 +50,16 @@ document.getElementById("demo3").innerHTML =
 "The full URL of this page is:<br>" + window.location.href;
 </script>
     
+ <p>After a function has been stored in a variable,
+the variable can be used as a function:</p>
+
+<p id="demo4"></p>
+
+<script>
+const x = function (a, b) {return a * b};
+document.getElementById("demo4").innerHTML = x(6, 3);
+</script>
+    
   </body>
 </html>
 
